@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>orderGame</title>
+    <link rel="stylesheet" type="text/css" href="orderGame.css">
+</head>
+<body>
+
+    <div id="start">
+        <button id="startBtn" onclick="randomSort()">시작</button>
+    </div>
+
+    <div id="container">
+        <div id="randomList">
+            
+        </div>
+
+        <div id ="gameBox">
+            <div id="answerContainer">
+                <div id="answerBox-1" class="answerNum" draggable='false' ondragstart="dragStart(11)" ondragover="dragOver(event)" ondrop="drop(11)"></div>
+                <div id="answerBox-2" class="answerNum" draggable='false' ondragstart="dragStart(12)" ondragover="dragOver(event)" ondrop="drop(12)"></div>
+                <div id="answerBox-3" class="answerNum" draggable='false' ondragstart="dragStart(13)" ondragover="dragOver(event)" ondrop="drop(13)"></div>
+                <div id="answerBox-4" class="answerNum" draggable='false' ondragstart="dragStart(14)" ondragover="dragOver(event)" ondrop="drop(14)"></div>
+                <div id="answerBox-5" class="answerNum" draggable='false' ondragstart="dragStart(15)" ondragover="dragOver(event)" ondrop="drop(15)"></div>
+                <div id="answerBox-6" class="answerNum" draggable='false' ondragstart="dragStart(16)" ondragover="dragOver(event)" ondrop="drop(16)"></div>
+                <div id="answerBox-7" class="answerNum" draggable='false' ondragstart="dragStart(17)" ondragover="dragOver(event)" ondrop="drop(17)"></div>
+                <div id="answerBox-8" class="answerNum" draggable='false' ondragstart="dragStart(18)" ondragover="dragOver(event)" ondrop="drop(18)"></div>
+                <div id="answerBox-9" class="answerNum" draggable='false' ondragstart="dragStart(19)" ondragover="dragOver(event)" ondrop="drop(19)"></div>
+            </div>
+            <div id="time">00:00:00</div>
+                
+            <div id ="gameBoxBtn">
+                <input class="gameBtn" type="button" value="START" onclick="startTime()">
+                <input class="gameBtn" type="button" value="CHECK" onclick="checkAnswer()">
+                <input class="gameBtn" type="button" value="RESTART" onclick="reStart()">
+            </div>
+
+            <div id="resultAlert">
+                실패하였습니다! 
+                <br>
+                START버튼을 누르고 시작하세요!
+            </div>
+        </div>  
+    </div>
+    <script src="orderGame3.js"></script>
+</body>
+</html>

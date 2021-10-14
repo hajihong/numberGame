@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0; 
+}
+
+#start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#startBtn {
+    width: 40px;
+    height: 40px;
+}
+
+#container {
+    display: none;
+}
+
+#randomList {
+    display: inline-grid;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid black;
+    min-height: 100vh;
+}
+
+.randomNum {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+}
+
+#answerContainer {
+    display: inline-grid;
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px;
+}
+
+#gameBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.answerNum {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+}
+
+#time {
+    display: flex; 
+    align-items: center;
+    margin-left: 60px;
+    font-size: 40px;
+}
+
+#gameBoxBtn {
+    display: flex;
+    /* flex-direction: column;
+    align-items: center; */
+    justify-content: center;
+    margin-left: 30px;
+
+}
+
+.gameBtn {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#resultAlert {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
