@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="baseball.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="start">
+        <button id="startBtn" onclick="gameStart()">시작</button>
+    </div>
+    <div id="game">
+        <div id="label">
+            <span class="labelName">회말</span>
+            <span class="labelName">입력값</span>
+            <span class="labelName">결과값</span>
+        </div>
+        <div id ="record">
+            
+        </div>
+    
+
+        <div id="answer_sheet">
+            <span id="first_num"></span>
+            <span id="second_num"></span>
+            <span id="third_num"></span>
+        </div>
+
+        <div id="reset">
+            <button onclick="reset()">리셋</button>
+        </div>
+
+        <div id="number_pad">
+            <button class="number" value="1" onclick="addAnswer(this.value)">1</button>
+            <button class="number" value="2" onclick="addAnswer(this.value)">2</button>
+            <button class="number" value="3" onclick="addAnswer(this.value)">3</button>
+            <button class="number" value="4" onclick="addAnswer(this.value)">4</button>
+            <button class="number" value="5" onclick="addAnswer(this.value)">5</button>
+            <button class="number" value="6" onclick="addAnswer(this.value)">6</button>
+            <button class="number" value="7" onclick="addAnswer(this.value)">7</button>
+            <button class="number" value="8" onclick="addAnswer(this.value)">8</button>
+            <button class="number" value="9" onclick="addAnswer(this.value)">9</button>
+            <button class="number" onclick="checkAnswer()">검증</button>
+            <button class="number" value="0" onclick="addAnswer(this.value)">0</button>
+            <button class="number" onclick="eraseAnswer()" >지우기</button>
+        </div>
+        
+        <div id="content">
+
+            <div id="answer">
+                
+            </div>
+
+            <div id="result">
+
+            </div>
+        </div>
+
+
+
+    
+    </div>
+    <script src="baseball.js"></script>
+</body>
+</html>

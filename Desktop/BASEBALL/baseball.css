@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#record {
+    display: flex;
+    width: 300px;
+    height: 350px;
+    border: 1px solid black;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.box {
+    display: flex;
+    width: 300px;
+    height: 30px;
+    justify-content:space-evenly;
+    align-items: center;
+}
+#label {
+    display: flex;
+    width: 300px;
+    height: 30px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    margin-left: 50px;
+}
+
+.labelName {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    align-items: center;
+    border-right: 1px solid black;
+}
+
+.index {
+    display: flex;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.outcome {
+    display: flex;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+#answer_sheet {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    border: 1px solid black;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+#first_num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 100px;
+    border-right: 1px solid black;
+}
+
+#second_num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 100px;
+    border-right: 1px solid black;
+}
+
+#third_num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 100px;
+}
+
+#number_pad{
+    display: inline-grid;
+    width: 400px;
+    height: 200px;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px 50px 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.number {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btns {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+#content {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+#answer {
+    font-size: 20px;
+    font-weight: 500;
+    display: none;
+}
+
+#result {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+    
+
+#game {
+    display: none;
+}
+
+#start {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#startBtn {
+    width: 40px;
+    height: 40px;
+}
+
+#reset {
+    display: flex;
+    width: 300px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+//변수명 -> 목적과 역할
